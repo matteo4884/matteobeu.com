@@ -14,7 +14,6 @@ body {
   color: #fafafa;
   font-size: clamp(14px, 0.703vw, 18px);
 }
-
 .--prim-s-font {
   font-size: clamp(12px, 0.547vw, 14px);
   line-height: 1.2;
@@ -27,7 +26,6 @@ body {
   font-size: clamp(24px, 1.25vw, 32px);
   line-height: 1.2;
 }
-
 .--sec-xs-font {
   font-family: "Space Grotesk", serif;
   font-size: clamp(16px, 0.859vw, 22px);
@@ -48,24 +46,20 @@ body {
   font-size: clamp(100px, 7.813vw, 200px);
   line-height: 1.2;
 }
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar,
 html::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar,
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
 .sec-font {
   font-family: "Space Grotesk", serif;
 }
-
 .background-rainbow {
   font-family: "Space Grotesk", serif;
   background: linear-gradient(
@@ -78,7 +72,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .background-rainbow-anim-text {
   font-family: "Space Grotesk", serif;
   background: linear-gradient(
@@ -93,7 +86,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .animation-text {
   animation: animation-text 300s linear infinite;
 }
