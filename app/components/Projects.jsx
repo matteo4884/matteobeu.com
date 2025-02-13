@@ -91,8 +91,8 @@ export function Project({
       >
         <video
           autoPlay
-          playsInline
           muted
+          playsInline
           loop
           className="w-full h-full cursor-pointer rounded-xl max-h-screen"
           id={`video-${id}`}
@@ -103,6 +103,7 @@ export function Project({
           }}
         >
           <source src={src} type="video/webm" />
+          <source src={src} type="video/mp4" />
         </video>
         <div
           className="absolute right-4 bottom-4 p-2 bg-[#17171779] cursor-pointer"
@@ -114,7 +115,14 @@ export function Project({
           }}
           onClick={(e) => {
             e.stopPropagation();
-            document.getElementById(`video-${id}`).requestFullscreen();
+            const video = document.getElementById(`video-${id}`);
+
+            if (video.requestFullscreen) video.requestFullscreen();
+            else if (video.webkitRequestFullscreen)
+              video.webkitRequestFullscreen();
+            else if (video.mozRequestFullScreen) video.mozRequestFullScreen();
+            else if (video.msRequestFullscreen) video.msRequestFullscreen();
+            else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
           }}
         >
           <SlSizeFullscreen />
