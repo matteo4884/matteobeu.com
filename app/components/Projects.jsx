@@ -91,6 +91,7 @@ export function Project({
       >
         <video
           autoPlay
+          playsInline
           muted
           loop
           className="w-full h-full cursor-pointer rounded-xl max-h-screen"
