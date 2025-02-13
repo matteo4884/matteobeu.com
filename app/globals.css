@@ -161,7 +161,6 @@ html {
 .rainbow-delay-6::after {
   animation: shadow 30s 10s linear infinite;
 }
-
 @keyframes shadow {
   0% {
     background-position: 0 0;
@@ -173,7 +172,6 @@ html {
     background-position: 0 0;
   }
 }
-
 .backdrop-blur-default {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
