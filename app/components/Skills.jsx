@@ -1,6 +1,7 @@
 "use client";
 
 import ContainerTextAnimation from "./ContainerTextAnimation";
+import Image from "next/image";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -33,7 +34,6 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiPm2 } from "react-icons/si";
 import MarginContainer from "./MarginContainer";
-import { ASCII_ART } from "../ascii";
 
 export default function Skills() {
   const container = useRef();
@@ -214,10 +214,10 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <div className="overflow-hidden ">
+      <div className="overflow-hidden">
         <MarginContainer>
           <div
-            className="grid tablet:grid-cols-2 grid-cols-1 items-center justify-center h-screen"
+            className="w-full grid tablet:grid-cols-2 grid-cols-1 items-center justify-center h-screen relative"
             ref={container}
           >
             <div className="laptop:px-[15%] px-[0%] text-center left-skills opacity-0 laptop:-translate-x-[50%] z-[-1]">
@@ -227,10 +227,14 @@ export default function Skills() {
               development tools, I have built a strong technical foundation and
               deepened my understanding of software development.
             </div>
-            <div className="pointer-events-none tablet:static absolute z-[-2] right-skills opacity-0 laptop:translate-x-[50%]">
-              <pre className="text-white laptop:text-[0.4vw] tablet:text-[0.5vw] text-[1vw]  leading-none w-full flex justify-center items-center tablet:opacity-50 opacity-30">
-                <code>{ASCII_ART[1]}</code>
-              </pre>
+            <div className="laptop:w-auto w-full pointer-events-none flex justify-center items-center tablet:static absolute z-[-2] right-skills opacity-0 laptop:translate-x-[50%]">
+              <Image
+                src={"/ubuntu.png"}
+                alt="ubuntu"
+                width={300}
+                height={300}
+                className="laptop:opacity-100 opacity-5"
+              />
             </div>
           </div>
         </MarginContainer>
