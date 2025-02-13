@@ -103,7 +103,7 @@ export function Project({
           }}
         >
           <source src={src} type="video/webm" />
-          <source src={src} type="video/mp4" />
+          <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
         </video>
         <div
           className="absolute right-4 bottom-4 p-2 bg-[#17171779] cursor-pointer"
@@ -198,7 +198,7 @@ const PROJECTS = [
     paragraph:
       "An animation library for page transitions, developed and published when I used to work at AWOM. This library implements a wide range of smooth, dynamic animations that are triggered when clicking on links, enhancing the user experience with seamless transitions between pages.",
     link: "https://github.com/awomstudio/awomPT",
-    src: "/videos/awompt_desktop.webm",
+    src: "/videos/awompt_desktop.mp4",
   },
   {
     title: "Generic Administrator Panel",
