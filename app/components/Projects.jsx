@@ -80,7 +80,13 @@ export function Project({
   return (
     <div className="m-[10vw]">
       <div
-        className="h-full w-full relative left-0 right-0 mx-auto"
+        className="h-full w-full max-w-[1200px] relative left-0 right-0 mx-auto bg-center bg-cover bg-no-repeat rounded-xl"
+        style={{
+          backgroundImage: `url(${src.replace(
+            "desktop.webm",
+            "placeholder.png"
+          )})`,
+        }}
         onMouseEnter={() => {
           setTitle(title);
           setVisible(true);
