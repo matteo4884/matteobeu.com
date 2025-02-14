@@ -4,13 +4,6 @@ import ContainerTextAnimation from "./ContainerTextAnimation";
 import Image from "next/image";
 
 import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies
-gsap.registerPlugin(ScrollTrigger);
-
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -37,34 +30,6 @@ import MarginContainer from "./MarginContainer";
 
 export default function Skills() {
   const container = useRef();
-  useGSAP(
-    () => {
-      // gsap code here...
-      gsap.to(".left-skills", {
-        scrollTrigger: {
-          trigger: container.current,
-          start: "center bottom",
-          end: "center center",
-          // markers: true,
-          scrub: 3,
-        },
-        x: "0%",
-        opacity: 1,
-      });
-      gsap.to(".right-skills", {
-        scrollTrigger: {
-          trigger: container.current,
-          start: "center bottom",
-          end: "center center",
-          // markers: true,
-          scrub: 3,
-        },
-        x: "0%",
-        opacity: 1,
-      });
-    },
-    { scope: container }
-  ); // <-- scope is for selector text (optional)
   return (
     <div className=" skills relative">
       <ContainerTextAnimation text={"Skills Skills"} />
@@ -217,17 +182,17 @@ export default function Skills() {
       <div className="overflow-hidden">
         <MarginContainer>
           <div
-            className="w-full grid tablet:grid-cols-2 grid-cols-1 items-center justify-center h-screen relative"
+            className="w-full grid tablet:grid-cols-2 grid-cols-1 items-center justify-center laptop:h-screen my-[30vh] relative"
             ref={container}
           >
-            <div className="laptop:px-[15%] px-[0%] text-center left-skills opacity-0 laptop:-translate-x-[50%] z-[-1]">
+            <div className="laptop:px-[15%] px-[0%] text-center left-skills z-[-1]">
               I have developed these skills with <b>passion</b>, constantly
               experimenting and refining my knowledge through hands-on practice.
               Working extensively with the terminal, Linux distros, and various
               development tools, I have built a strong technical foundation and
               deepened my understanding of software development.
             </div>
-            <div className="laptop:w-auto w-full pointer-events-none flex justify-center items-center tablet:static absolute z-[-2] right-skills opacity-0 laptop:translate-x-[50%]">
+            <div className="laptop:w-auto w-full pointer-events-none flex justify-center items-center tablet:static absolute z-[-2] right-skills">
               <Image
                 src={"/ubuntu.png"}
                 alt="ubuntu"

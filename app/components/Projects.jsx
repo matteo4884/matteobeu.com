@@ -105,7 +105,7 @@ export function Project({
           <source src={src} type="video/webm" />
           <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
         </video>
-        <div
+        {/* <div
           className="absolute right-4 bottom-4 p-2 bg-[#17171779] cursor-pointer"
           onMouseEnter={() => {
             setVisible(false);
@@ -126,7 +126,7 @@ export function Project({
           }}
         >
           <SlSizeFullscreen />
-        </div>
+        </div> */}
 
         <div
           className="fixed flex justify-center duration-200 items-center backdrop-blur-default top-0 left-0 h-screen w-screen z-50"
