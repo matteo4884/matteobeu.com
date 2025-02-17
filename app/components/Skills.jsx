@@ -182,7 +182,7 @@ export default function Skills() {
       <div className="overflow-hidden">
         <MarginContainer>
           <div
-            className="w-full grid tablet:grid-cols-2 grid-cols-1 items-center justify-center laptop:h-screen my-[30vh] relative"
+            className="w-full grid tablet:grid-cols-2 grid-cols-1 items-center justify-center laptop:h-screen laptop:my-0 my-[30vh] relative"
             ref={container}
           >
             <div className="laptop:px-[15%] px-[0%] text-center left-skills z-[-1]">
