@@ -185,13 +185,13 @@ const PROJECTS = [
     link: "https://adpbusiness.it/",
     src: "/videos/adp_desktop.webm",
   },
-  // {
-  //   title: "Mu Gelateria (AWOM Collaboration)",
-  //   paragraph:
-  //     "I developed the multi-page, multilingual website for Mu Gelateria in collaboration with AWOM. While AWOM handled the graphic design, I was responsible for the development. The site is designed to offer a smooth and engaging user experience, featuring a modern layout that highlights the brand's products and values. It’s optimized for performance and accessibility, ensuring seamless navigation across different languages and devices.",
-  //   link: "https://mugelateria.com",
-  //   src: "/videos/mu_desktop.webm",
-  // },
+  {
+    title: "Mu Gelateria (AWOM Collaboration)",
+    paragraph:
+      "I developed the multi-page, multilingual website for Mu Gelateria in collaboration with AWOM. While AWOM handled the graphic design, I was responsible for the development. The site is designed to offer a smooth and engaging user experience, featuring a modern layout that highlights the brand's products and values. It’s optimized for performance and accessibility, ensuring seamless navigation across different languages and devices.",
+    link: "https://mugelateria.com",
+    src: "/videos/mu_desktop.webm",
+  },
   {
     title: "2D Quiz Game",
     paragraph:
