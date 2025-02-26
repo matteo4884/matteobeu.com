@@ -108,9 +108,9 @@ export function ExperienceDesktop() {
               </a>
               <div>- Web Developer</div>
               <p className="--prim-s-font tablet:pr-[50%] pr-0 pl-4 mt-1">
-                Managing projects independently, overseeing the full software
-                development process. Focused on creating innovative solutions
-                through personal and client-based projects.
+                Responsible for developing and managing web projects. I worked
+                independently, creating tailored solutions for clients while
+                continuously improving my technical skills.
               </p>
             </div>
           </div>
@@ -160,9 +160,10 @@ export function ExperienceDesktop() {
               <div className="font-bold">Indipendent</div>
               <div>- Full-stack Developer</div>
               <p className="--prim-s-font tablet:pr-[50%] pr-0 pl-4 mt-1">
-                I manage my work independently, handling all aspects of software
-                development through personal projects that allow me to create
-                innovative solutions.
+                I develop custom software solutions, managing the entire process
+                from design to implementation. I work on personal projects and
+                client collaborations, with a strong focus on innovation and
+                efficiency.
               </p>
             </div>
           </div>
@@ -255,9 +256,9 @@ export function ExperienceMobile() {
           </a>
           <div>- Web Developer</div>
           <p className="--prim-s-font tablet:pr-[50%] pr-0 pl-4 mt-1">
-            Managing projects independently, overseeing the full software
-            development process. Focused on creating innovative solutions
-            through personal and client-based projects.
+            Responsible for developing and managing web projects. I worked
+            independently, creating tailored solutions for clients while
+            continuously improving my technical skills.
           </p>
         </div>
       </div>
@@ -313,9 +314,10 @@ export function ExperienceMobile() {
           <div className="font-bold">Indipendent</div>
           <div>- Full-stack Developer</div>
           <p className="--prim-s-font tablet:pr-[50%] pr-0 pl-4 mt-1">
-            I manage my work independently, handling all aspects of software
-            development through personal projects that allow me to create
-            innovative solutions.
+            I develop custom software solutions, managing the entire process
+            from design to implementation. I work on personal projects and
+            client collaborations, with a strong focus on innovation and
+            efficiency.
           </p>
         </div>
       </div>
