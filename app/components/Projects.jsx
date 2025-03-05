@@ -83,7 +83,7 @@ export function Project({
         className="h-full w-full max-w-[1200px] relative left-0 right-0 mx-auto bg-center bg-cover bg-no-repeat rounded-xl"
         // style={{
         //   backgroundImage: `url(${src.replace(
-        //     "desktop.webm",
+        //     "desktop.mp4",
         //     "placeholder.png"
         //   )})`,
         // }}
@@ -108,8 +108,7 @@ export function Project({
             document.body.style.overflow = "hidden";
           }}
         >
-          <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
-          <source src={src} type="video/webm" />
+          <source src={src} type="video/mp4" />
         </video>
         {/* <div
           className="absolute right-4 bottom-4 p-2 bg-[#17171779] cursor-pointer"
@@ -176,48 +175,48 @@ const PROJECTS = [
     paragraph:
       "I designed and developed the website for Armonia, a collective focused on creating audiovisual experiences within the electronic music scene. The site features a modern, intuitive interface that highlights their stunning DJ set locations and artistic collaborations. It’s optimized for high performance and smooth navigation across all devices. Additionally, I managed the deployment process, hosting the website on a virtual machine configured with NGINX.",
     link: "https://armoniaofc.com/",
-    src: "/videos/armonia_desktop.webm",
+    src: "/videos/armonia_desktop.mp4",
   },
   {
     title: "ADP Business (AWOM Collaboration)",
     paragraph:
       "I developed the website for ADP Business in collaboration with AWOM. While AWOM handled the graphic design, I was responsible for the development and deployment of the site. It features a clean, professional design with user-friendly navigation and optimized performance, ensuring a seamless experience across all devices.",
     link: "https://adpbusiness.it/",
-    src: "/videos/adp_desktop.webm",
+    src: "/videos/adp_desktop.mp4",
   },
   {
     title: "Mu Gelateria (AWOM Collaboration)",
     paragraph:
       "I developed the multi-page, multilingual website for Mu Gelateria in collaboration with AWOM. While AWOM handled the graphic design, I was responsible for the development. The site is designed to offer a smooth and engaging user experience, featuring a modern layout that highlights the brand's products and values. It’s optimized for performance and accessibility, ensuring seamless navigation across different languages and devices.",
     link: "https://mugelateria.com",
-    src: "/videos/mu_desktop.webm",
+    src: "/videos/mu_desktop.mp4",
   },
   {
     title: "2D Quiz Game",
     paragraph:
       "A 2D quiz game I developed purely for fun in less than two days. The gameplay involves finding question marks and answering questions correctly to progress. The game is available exclusively for desktop, as it was created just for entertainment with a focus on quick development and a simple, engaging experience.",
     link: "https://quizgame.matteobeu.com/",
-    src: "/videos/quizgame_desktop.webm",
+    src: "/videos/quizgame_desktop.mp4",
   },
   {
     title: "Page Transition Library",
     paragraph:
       "An animation library for page transitions, developed and published when I used to work at AWOM. This library implements a wide range of smooth, dynamic animations that are triggered when clicking on links, enhancing the user experience with seamless transitions between pages.",
     link: "https://github.com/awomstudio/awomPT",
-    src: "/videos/awompt_desktop.webm",
+    src: "/videos/awompt_desktop.mp4",
   },
   {
     title: "Generic Administrator Panel",
     paragraph:
       "I developed an admin panel using React for the frontend and Node.js, Express.js, MongoDB, and APIs for the backend. This admin panel provides businesses with an intuitive interface to efficiently manage data, users, and content. It can be customized to handle tasks such as user management, content updates, analytics tracking, and workflow automation, making it a powerful tool for improving operational efficiency and streamlining business processes.",
     link: "",
-    src: "/videos/adminpanel_desktop.webm",
+    src: "/videos/adminpanel_desktop.mp4",
   },
   {
     title: "Funny Road Hazards",
     paragraph:
       "I developed a fun platform designed to report road hazards, where each 'puffo' represents a hazard alert. Registered users can add new reports to the database, and each alert is automatically removed after 3 hours. The platform is built with React for the frontend and Node.js, Express.js, and Mongoose for the backend. It’s optimized for mobile devices while maintaining excellent performance on desktop as well.",
     link: "",
-    src: "/videos/puffi_desktop.webm",
+    src: "/videos/puffi_desktop.mp4",
   },
 ];
