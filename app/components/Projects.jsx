@@ -81,12 +81,12 @@ export function Project({
     <div className="m-[10vw]">
       <div
         className="h-full w-full max-w-[1200px] relative left-0 right-0 mx-auto bg-center bg-cover bg-no-repeat rounded-xl"
-        style={{
-          backgroundImage: `url(${src.replace(
-            "desktop.webm",
-            "placeholder.png"
-          )})`,
-        }}
+        // style={{
+        //   backgroundImage: `url(${src.replace(
+        //     "desktop.webm",
+        //     "placeholder.png"
+        //   )})`,
+        // }}
         onMouseEnter={() => {
           setTitle(title);
           setVisible(true);
@@ -108,8 +108,8 @@ export function Project({
             document.body.style.overflow = "hidden";
           }}
         >
-          <source src={src} type="video/webm" />
           <source src={src.replace(".webm", ".mp4")} type="video/mp4" />
+          <source src={src} type="video/webm" />
         </video>
         {/* <div
           className="absolute right-4 bottom-4 p-2 bg-[#17171779] cursor-pointer"
